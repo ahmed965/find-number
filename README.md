@@ -1,6 +1,6 @@
 # find-number
 
-a Javascript game:
+a JavaScript game:
 
 - When page loads, a number is randomly created
 - When the user click at the button it is either displayed "Too high", "Too Low", or "You
