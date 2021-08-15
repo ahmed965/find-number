@@ -1,0 +1,33 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url('bg.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+form {
+  border: 1px solid;
+  padding: 20px 60px;
+  background-color: #ccc;
+}
+
+.not-found {
+  color: red;
+}
+
+.found {
+  color: green;
+}
