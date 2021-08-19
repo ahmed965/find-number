@@ -35,8 +35,6 @@
       } else if(proposedNumber > numberToFind) {
         appendNumber(proposedNumber);
         showMessage('Too high', 'not-found');
-       
-        
       } else if(proposedNumber == numberToFind) {
         appendNumber(proposedNumber);
         message.classList.remove('not-found');
@@ -54,17 +52,14 @@
       for(let i = 0; i <tries.length; i++) {
         listTries += '<li>' +  tries[i] + '</li>'
       }
-
       const span = document.createElement('span');
       const choosen = document.createTextNode('your tries were:');
       span.appendChild(choosen);
       boxTries.insertBefore(span, inputTries);
       inputTries.innerHTML = listTries;
-
       const jsonString = JSON.stringify(tries);
       //console.log(jsonString);
       localStorage.setItem('tries', jsonString);
   }
 
- 
 })();
