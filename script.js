@@ -29,7 +29,7 @@
     let proposedNumber = inputProposed.value;
     if (proposedNumber == '' || proposedNumber > 100 || proposedNumber < 0) {
       showMessage('Please enter a valid number', 'not-found');
-    } else if ( proposedNumber < numberToFind) {
+      } else if ( proposedNumber < numberToFind) {
         appendNumber(proposedNumber);
         showMessage('Too low', 'not-found');
       } else if(proposedNumber > numberToFind) {
