@@ -6,9 +6,8 @@
   const boxTries = document.querySelector(".box-tries");
   const inputTries = document.querySelector(".tries");
 
-  //Variable
-  let numberToFind = Math.floor(Math.random() * 101);
-  let tries = [];
+  const numberToFind = Math.floor(Math.random() * 101);
+  const tries = [];
   console.log(numberToFind);
 
   //Events
@@ -25,7 +24,7 @@
   }
 
   function findTheNumber() {
-    let proposedNumber = inputProposed.value;
+    const proposedNumber = inputProposed.value;
     if (proposedNumber == "" || proposedNumber > 100 || proposedNumber < 0) {
       showMessage("Please enter a valid number", "not-found");
     } else if (proposedNumber < numberToFind) {
